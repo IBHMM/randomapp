@@ -1,0 +1,448 @@
+<!DOCTYPE html>
+<html lang="az">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nuri Techno Group</title>
+    <meta name="description" content="Nuri Techno Group - Texnoloji həllərin öndəri. Professional IT və texnoloji həllər təqdim edirik.">
+    <meta name="keywords" content="Texnologiya, IT Həllər, Şəbəkə Avadanlıqları, Nuri Techno Group">
+    <meta name="author" content="Nuri Techno Group">
+    <meta property="og:title" content="Nuri Techno Group">
+    <meta property="og:description" content="Professional IT və texnoloji həllər. Texnologiyanın gələcəyini bizimlə kəşf edin.">
+    <meta property="og:image" content="../assets/logo.jpg">
+    <meta property="og:url" content="https://www.ntg.az">
+    <meta name="twitter:card" content="summary_large_image">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/2.2.19/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/notyf/notyf.min.css">
+    <link rel="stylesheet" href="./general.css">
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
+</head>
+<body class="bg-gray-50">
+
+    <figure class="fingerprint-loader" id="fingerprint-loader">
+        <img
+          src="https://cdn.dribbble.com/users/1366606/screenshots/8075231/media/e971c24ffcfc453ec6c21accb4acbec8.gif"
+          alt="Fingerprint scan loader"
+          loading="lazy"
+          width="700"
+          height="400"
+        />
+    </figure>
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-lg fixed w-full z-50">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="flex justify-between items-center h-14">
+                <!-- Brand Logo or Name -->
+                <a href="#header" class="logo"  id="homemenulinks">
+                    <img src="./assets/logo.jpg" class="logoimg" alt="Nuri techno logo">
+                </a>
+    
+                <!-- Desktop Navigation Links -->
+                <div class="hidden md:flex items-center space-x-6"">
+                    <a href="#products" class="text-gray-600 hover:text-blue-600 font-medium">Məhsullar</a>
+                    <a href="#services" class="text-gray-600 hover:text-blue-600 font-medium">Xidmətlər</a>
+                    <a href="#projects" class="text-gray-600 hover:text-blue-600 font-medium">Layihələr</a>
+                    <a href="#portfolio" class="text-gray-600 hover:text-blue-600 font-medium">Portfolio</a>
+                    <a href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg hover:bg-blue-700">Əlaqə</a>
+                </div>
+    
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="relative w-8 h-8 focus:outline-none">
+                        <span class="block absolute bg-gray-100 h-1 w-8 bg-gray-600 transition-transform duration-300 transform top-2 left-0"></span>
+                        <span class="block absolute bg-gray-100 h-1 w-8 bg-gray-600 transition-opacity duration-300 transform top-4 left-0"></span>
+                        <span class="block absolute bg-gray-100 h-1 w-8 bg-gray-600 transition-transform duration-300 transform top-6 left-0"></span>
+                    </button>
+                </div>
+            </div>
+    
+            <!-- Mobile Navigation Links with Animation -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a id="homemenulinks" href="#products" class="text-gray-600 hover:text-blue-600 font-medium block text-center py-2">Məhsullar</a>
+                <a id="homemenulinks" href="#services" class="text-gray-600 hover:text-blue-600 font-medium block text-center py-2">Xidmətlər</a>
+                <a id="homemenulinks" href="#projects" class="text-gray-600 hover:text-blue-600 font-medium block text-center py-2">Layihələr</a>
+                <a id="homemenulinks" href="#portfolio" class="text-gray-600 hover:text-blue-600 font-medium block text-center py-2">Portfolio</a>
+                <a id="homemenulinks" href="#contact" class="bg-blue-600 text-white px-4 py-2 rounded-lg block text-center mx-auto mt-2 hover:bg-blue-700">
+                    Əlaqə
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="pt-40 text-white picture min-h-[500px]" id="header">
+        <div class="max-w-7xl mx-auto px-4 py-20">
+            <div class="flex items-center justify-end items-end w-full">
+                <div class="flex flex-col md:items-end justify-between items-center text-center md:text-right">
+                    <!-- Heading -->
+                    <h1 class="text-4xl md:text-5xl font-bold mb-4 md:mb-6">
+                        Texnoloji Həllərin Öndəri
+                    </h1>
+                    <!-- Description -->
+                    <p class="text-lg md:text-xl mb-6 md:mb-8">
+                        Nuri Techno Group ilə gələcəyin texnologiyalarını kəşf edin
+                    </p>
+                    <!-- Contact Button -->
+                    <a href="#contact" class="bg-white text-blue-600 px-6 py-2 md:px-8 md:py-3 rounded-lg font-bold hover:bg-gray-100 inline-block">
+                        Bizimlə Əlaqə
+                    </a>
+                    <!-- Social Media Links -->
+                    <div class="flex space-x-4 mt-5 social">
+                        <a href="https://www.facebook.com/ntg.az/" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/nuri-techno-group" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nuritechnogroup/" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/+9940777590085?text=Salam" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="products" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">Məhsullarımız</h2>
+    
+            <div id="products-container" class="grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-6">
+            </div>
+        </div>
+    </section>    
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">Xidmətlərimiz</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-network-wired text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Şəbəkə avadanlıqlarına texniki dəstək</h3>
+                    <p class="text-gray-600">Professional network equipment support and maintenance services</p>
+                </div>
+                <!-- Service 2 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-server text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Server avadanlıqlarına texniki dəstək</h3>
+                    <p class="text-gray-600">Expert server support and troubleshooting solutions</p>
+                </div>
+                <!-- Service 3 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-laptop text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Kompüter, noutbuklara texniki dəstək</h3>
+                    <p class="text-gray-600">Comprehensive support for desktops and laptops</p>
+                </div>
+                <!-- Service 4 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-video text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Video müşahidə sistemlərinə texniki dəstək</h3>
+                    <p class="text-gray-600">Reliable surveillance system support and monitoring</p>
+                </div>
+                <!-- Service 5 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-door-open text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Giriş çıxış nəzarət sistemləri</h3>
+                    <p class="text-gray-600">Access control systems setup and maintenance</p>
+                </div>
+                <!-- Service 6 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-phone-volume text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">İP Telefoniya Sistemi</h3>
+                    <p class="text-gray-600">Advanced IP telephony solutions and support</p>
+                </div>
+                <!-- Service 7 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-shield-alt text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">İnformasiya təhlükəsizliyi sistemləri</h3>
+                    <p class="text-gray-600">Secure information systems and cybersecurity services</p>
+                </div>
+                <!-- Service 8 -->
+                <div class="bg-white p-8 rounded-xl shadow-lg hover:shadow-xl transition-shadow">
+                    <div class="text-blue-600 mb-4">
+                        <i class="fas fa-code text-4xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Proqramlaşdırma</h3>
+                    <p class="text-gray-600">Custom software development and programming services</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">Layihələrimiz</h2>
+            <div class="grid xs:grid-cols-2 sm:grid-cols-2 md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Project 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=BiELkGMU" alt="X Company Project" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">X Şirkəti</h3>
+                        <p class="text-gray-600">Enterprise network infrastructure deployment</p>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=BiELkGMU" alt="Y Factory Project" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Y Fabriki</h3>
+                        <p class="text-gray-600">Industrial automation and connectivity solutions</p>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=BiELkGMU" alt="Z Hospital Project" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Z Xəstəxanası</h3>
+                        <p class="text-gray-600">Advanced IP telephony and communication systems</p>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=BiELkGMU" alt="City Mall Project" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">City Mall</h3>
+                        <p class="text-gray-600">Comprehensive surveillance and access control system</p>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=BiELkGMU" alt="Q Bank Project" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Q Bank</h3>
+                        <p class="text-gray-600">Secure data center and disaster recovery solutions</p>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=BiELkGMU" alt="Tech Park Project" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tech Park</h3>
+                        <p class="text-gray-600">IoT-enabled smart building infrastructure</p>
+                    </div>
+                </div>
+                <!-- Project 7 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=BiELkGMU" alt="University A Project" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Universitet A</h3>
+                        <p class="text-gray-600">Campus-wide wireless connectivity and e-learning setup</p>
+                    </div>
+                </div>
+                <!-- Project 8 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://culture.ec.europa.eu/sites/default/files/styles/eac_ratio_16_9_large/public/2022-03/ce_priority2_CreativeLenses.png?h=9ce74dc1&itok=BiELkGMU" alt="Residential Complex B Project" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Yaşayış Kompleksi B</h3>
+                        <p class="text-gray-600">Integrated home automation and surveillance systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="py-20 bg-gray-100">
+        <div class="max-w-7xl mx-auto px-4">
+            <h2 class="text-4xl font-bold mb-12 text-center">Portfolio</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-6">
+                <!-- Portfolio Item 1 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://itbrief.com.au/uploads/story/2023/11/17/img-DR6kK8KZ3NWLb8vzW5MFphuV.webp" alt="Portfolio Item" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">X Şirkəti</h3>
+                        <p class="text-gray-600">Complete IT infrastructure solution</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 2 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://itbrief.com.au/uploads/story/2023/11/17/img-DR6kK8KZ3NWLb8vzW5MFphuV.webp" alt="Portfolio Item" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Y Fabriki</h3>
+                        <p class="text-gray-600">Industrial automation systems</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 3 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://itbrief.com.au/uploads/story/2023/11/17/img-DR6kK8KZ3NWLb8vzW5MFphuV.webp" alt="Portfolio Item" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Z Universiteti</h3>
+                        <p class="text-gray-600">Campus-wide networking solution</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 4 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://itbrief.com.au/uploads/story/2023/11/17/img-DR6kK8KZ3NWLb8vzW5MFphuV.webp" alt="Portfolio Item" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Tech Park</h3>
+                        <p class="text-gray-600">Smart building infrastructure</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 5 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://itbrief.com.au/uploads/story/2023/11/17/img-DR6kK8KZ3NWLb8vzW5MFphuV.webp" alt="Portfolio Item" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">City Mall</h3>
+                        <p class="text-gray-600">Advanced surveillance systems</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 6 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://itbrief.com.au/uploads/story/2023/11/17/img-DR6kK8KZ3NWLb8vzW5MFphuV.webp" alt="Portfolio Item" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">A Bank</h3>
+                        <p class="text-gray-600">Secure data center setup</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 7 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://itbrief.com.au/uploads/story/2023/11/17/img-DR6kK8KZ3NWLb8vzW5MFphuV.webp" alt="Portfolio Item" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Residential Complex B</h3>
+                        <p class="text-gray-600">Home automation and IoT systems</p>
+                    </div>
+                </div>
+                <!-- Portfolio Item 8 -->
+                <div class="bg-white rounded-xl shadow-lg overflow-hidden">
+                    <img src="https://itbrief.com.au/uploads/story/2023/11/17/img-DR6kK8KZ3NWLb8vzW5MFphuV.webp" alt="Portfolio Item" class="w-full">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold mb-2">Healthcare Facility</h3>
+                        <p class="text-gray-600">Hospital-wide communication systems</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-2 gap-12">
+                <div>
+                    <h2 class="text-4xl font-bold mb-8">Bizimlə Əlaqə</h2>
+                    <p class="text-gray-600 mb-8">Professional texnoloji həllər üçün bizimlə əlaqə saxlayın</p>
+                    <div class="space-y-4">
+                        <a class="flex items-center space-x-4" href="https://www.google.com/maps/place/Caspian+Plaza,+Jafar+Jabbarli+street,+Baku/@40.3854483,49.8262012,1160m/data=!3m2!1e3!4b1!4m6!3m5!1s0x40307d9beeb879ab:0x4b95545430ea69b1!8m2!3d40.3854442!4d49.8287815!16s%2Fg%2F1hhms1l0l!5m1!1e1?entry=ttu&g_ep=EgoyMDI0MTExOS4yIKXMDSoASAFQAw%3D%3D" target="_blank">
+                            <i class="fas fa-map-marker-alt text-blue-600 text-xl"></i>
+                            <span>Bakı şəhəri, Azərbaycan</span>
+                        </a>
+                        
+                        <a class="flex items-center space-x-4" href="tel:+994777590085">
+                            <i class="fas fa-phone text-blue-600 text-xl"></i>
+                            <span>+994 77 759 00 85</span>
+                        </a>
+                        
+                        <a class="flex items-center space-x-4" href="mailto:info@nuritechno.az">
+                            <i class="fas fa-envelope text-blue-600 text-xl"></i>
+                            <span>info@ntg.az</span>
+                        </a>                        
+                    </div>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-lg">
+                    <form class="space-y-4">
+                        <div>
+                            <label class="block text-gray-700 mb-2">Adınız</label>
+                            <input id="name" type="text" class="w-full p-3 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Email</label>
+                            <input id="email" type="email" class="w-full p-3 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Telefon</label>
+                            <input id="phone" type="tel" class="w-full p-3 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Mövzu başlığı</label>
+                            <input id="subject" type="text" class="w-full p-3 border rounded-lg">
+                        </div>
+                        <div>
+                            <label class="block text-gray-700 mb-2">Mətn</label>
+                            <textarea id="message" class="w-full p-3 border rounded-lg h-32"></textarea>
+                        </div>
+                        <button class="w-full bg-blue-600 text-white py-3 rounded-lg font-bold hover:bg-blue-700">Göndər</button>
+                    </form>
+                    
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="max-w-7xl mx-auto px-4">
+            <div class="grid md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center space-x-2 mb-6">
+                        <span class="text-xl font-bold">Nuri Techno Group</span>
+                    </div>
+                    <p class="text-gray-400">Professional texnoloji həllər təqdim edən şirkətiniz</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Məhsullar</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Şəbəkə Avadanlıqları</a></li>
+                        <li><a href="#" class="hover:text-white">Server Avadanlıqları</a></li>
+                        <li><a href="#" class="hover:text-white">Video nəzarət</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Xidmətlər</h3>
+                    <ul class="space-y-2 text-gray-400">
+                        <li><a href="#" class="hover:text-white">Texniki dəstək</a></li>
+                        <li><a href="#" class="hover:text-white">Konsultasiya</a></li>
+                        <li><a href="#" class="hover:text-white">Quraşdırma</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Sosial Media</h3>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/ntg.az/" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/company/nuri-techno-group" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://www.instagram.com/nuritechnogroup/" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="https://wa.me/+9940777590085?text=Salam" target="_blank" class="text-white hover:text-blue-400 transition duration-300">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-12 pt-8 text-center text-gray-400">
+                <p>&copy; 2024 Nuri Techno Group. Bütün hüquqlar qorunur.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/notyf/notyf.min.js"></script>
+    <script src="./js/animation.js"></script>
+    <script src="./js/data.js" type="module"></script>
+    <script src="./js/home.js" type="module"> </script>
+    <script src="./js/mail.js" type="module"></script>
+</body>
+</html>

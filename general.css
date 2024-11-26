@@ -1,0 +1,273 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.fingerprint-loader {
+    background-color: rgb(51, 77, 132);
+    padding: 0;
+    border-radius: 0;
+    box-shadow: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 10000;
+    opacity: 1;
+    transform: scale(1);
+    transition: opacity 1s ease, transform 1s ease;
+}
+  
+.fingerprint-loader.fade-out {
+    opacity: 0; /* Fade out */
+    transform: scale(1.5); /* Expand outward */
+}
+  
+.fingerprint-loader img {
+    max-width: 100%;
+    max-height: 100%;
+}
+  
+.picture {
+    background-image: url('./assets/home/homeheader.png');
+    background-repeat: no-repeat;
+    background-position: center;
+    overflow-x: hidden;
+    background-size: cover;
+}
+
+.mobile-menu {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.5s ease, opacity 0.5s ease;
+    padding: 10px 0
+}
+
+.mobile-menu.open {
+    max-height: 300px; 
+    opacity: 1;
+}
+
+#mobile-menu-button span {
+    background-color: #2b2baa;
+    height: 2px;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+#mobile-menu-button.open span:nth-child(1) {
+    transform: rotate(45deg) translate(6px, 6px);
+}
+#mobile-menu-button.open span:nth-child(2) {
+    opacity: 0;
+}
+#mobile-menu-button.open span:nth-child(3) {
+    transform: rotate(-45deg) translate(6px, -6px);
+}
+
+.mobile-menu a {
+    opacity: 0;
+    animation: fade-in 0.5s ease forwards;
+}
+
+.mobile-menu a:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.mobile-menu a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.mobile-menu a:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.mobile-menu a:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.mobile-menu a:nth-child(5) {
+    animation-delay: 0.5s;
+}
+
+@keyframes fade-in {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-6px);
+    }
+}
+
+.social a {
+    display: inline-block;
+    transition: transform 0.3s ease, opacity 0.3s ease;
+    animation: bounce 1.5s infinite ease-in-out;
+}
+
+.social a:nth-child(1) {
+    animation-delay: 0s;
+}
+.social a:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.social a:nth-child(3) {
+    animation-delay: 0.4s;
+}
+.social a:nth-child(4) {
+    animation-delay: 0.6s;
+}
+
+select:focus {
+    outline: none;
+    box-shadow: 0 0 10px rgba(59, 130, 246, 0.5);
+}
+
+@media (max-width: 768px) {
+    .category div{
+        grid-template-columns: repeat(2, 1fr); 
+        padding: 0;
+    }
+
+    .category div h4 {
+        padding: 10px;
+    }
+
+    .category div p {
+        padding: 10px;
+    }
+}
+
+@media (max-width: 408px) {
+    .category div{
+        grid-template-columns: repeat(1, 1fr);
+        padding: 0;
+    }
+
+    .category div h4 {
+        padding: 10px;
+    }
+
+    .category div p {
+        padding: 10px;
+    }
+}
+
+#go-back-btn {
+    transition: transform 0.2s ease-in-out;
+}
+
+#go-back-btn:hover {
+    transform: scale(1.05);
+}
+
+.logo {
+    width: 60px;
+    height: 60px;
+    margin-top: 10px;
+    border: none;
+    box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logoimg {
+    width: 70px;
+    border: none;
+}
+
+.filter-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 15px; /* Increased for better spacing */
+    overflow-x: auto; /* Ensure horizontal scrolling for overflow content */
+    padding: 10px 20px; /* Add horizontal padding for cleaner spacing */
+    background-color: #f9f9f9; /* Light background for contrast */
+    border-radius: 8px; /* Rounded edges for a modern look */
+    scrollbar-width: thin; /* For modern browsers to show a thin scrollbar */
+    scrollbar-color: #c4c4c4 #f0f0f0; /* Custom scrollbar colors */
+    margin-bottom: 10px;
+}
+
+/* Smooth scrolling for modern UX */
+.filter-container::-webkit-scrollbar {
+    height: 1px; /* Thin horizontal scrollbar */
+}
+.filter-container::-webkit-scrollbar-thumb {
+    background-color: #c4c4c4; /* Scrollbar thumb color */
+    border-radius: 4px; /* Rounded scrollbar */
+}
+.filter-container::-webkit-scrollbar-track {
+    background-color: #f0f0f0; /* Scrollbar track color */
+}
+
+.filter-container button {
+    padding: 8px 16px;
+    background-color: #ffffff; /* Clean white background */
+    border: 1px solid #e5e7eb; /* Subtle border */
+    border-radius: 6px; /* Rounded corners */
+    color: #4b5563; /* Neutral text color */
+    font-size: 0.875rem; /* Comfortable text size */
+    font-weight: 500; /* Medium weight for emphasis */
+    cursor: pointer;
+    transition: all 0.3s ease-in-out; /* Smooth hover effect */
+    white-space: nowrap; /* Prevent text wrapping */
+}
+
+.filter-container button:hover {
+    background-color: #f3f4f6; /* Subtle hover background */
+    border-color: #d1d5db; /* Slightly darker border */
+}
+
+.filter-container button:active {
+    background-color: #e5e7eb; /* Pressed state background */
+    transform: scale(0.98); /* Subtle scale effect */
+}
+
+.filter-container button.active {
+    background-color: #2563eb; /* Active state with primary color */
+    color: #ffffff; /* White text for contrast */
+    border-color: #2563eb; /* Match border to background */
+}
+
+.card {
+    transform: translateY(10px); /* Slightly moved down */
+    opacity: 0;
+    transition: transform 0.5s ease, opacity 0.5s ease; /* Smooth fade and slide in */
+}
+
+.card:hover {
+    transform: scale(1.02); /* Slightly larger on hover */
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Add depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth hover effect */
+}
+
+@keyframes fadeInSlideUp {
+    0% {
+        opacity: 0; /* Fully transparent */
+        transform: translateY(20px); /* Start further down */
+    }
+    50% {
+        opacity: 0.5; /* Midway visible */
+        transform: translateY(10px); /* Halfway up */
+    }
+    100% {
+        opacity: 1; /* Fully visible */
+        transform: translateY(0); /* At final position */
+    }
+}
+
+.card.visible {
+    animation: fadeInSlideUp 0.6s ease forwards; /* 0.6s animation duration */
+}
+
