@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Remove the loader element completely after the animation finishes
       setTimeout(() => {
         fingerprintLoader.style.display = "none";
-      }, 500); // Match the duration of the animation in CSS
-    }, 500); // Wait 1 second before triggering the animation
+      }, 600); // Match the duration of the animation in CSS
+    }, 600); // Wait 1 second before triggering the animation
   });
   

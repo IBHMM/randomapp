@@ -3,7 +3,8 @@ html {
 }
 
 .fingerprint-loader {
-    background-color: rgb(51, 77, 132);
+    /* background-color: rgb(51, 77, 132); */
+    background-color: white;
     padding: 0;
     border-radius: 0;
     box-shadow: none;
@@ -170,8 +171,8 @@ select:focus {
 }
 
 .logo {
-    width: 60px;
-    height: 60px;
+    width: 80px;
+    height: 30px;
     margin-top: 10px;
     border: none;
     box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
@@ -180,10 +181,6 @@ select:focus {
     justify-content: center;
 }
 
-.logoimg {
-    width: 70px;
-    border: none;
-}
 
 .filter-container {
     display: flex;
