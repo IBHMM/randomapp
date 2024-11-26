@@ -1355,11 +1355,9 @@ function generateParentCategories() {
     });
 }
 
-// Initialize product cards
 function initialize() {
     console.log(Products)
     generateParentCategories();
 }
 
-// Call initialize function on page load
 initialize();
