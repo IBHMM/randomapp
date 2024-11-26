@@ -1,6 +1,6 @@
 export const Products = [
   {
-    id: 1,
+    id: "1.1",
     name: "Network equipments",
     img: "../assets/Products/Sebeke/1.png",
     subcategories: [
@@ -11,16 +11,18 @@ export const Products = [
         catalog: [
           {
             id: 111,
-            name: "Product 1",
-            describtion: "Description 1",
-            price: 100,
+            name: "Planet GS-5220-8UP2T2X",
+            describtion: "L3 8-Port 10/100/1000T 802.3bt PoE + 2-Port 10/100/1000T + 2-Port 10G SFP+ Managed Switch",
+            link: "https://www.planet.com.tw/en/product/gs-5220-8up2t2x-v4",
+            price: 0,
             image: "../assets/Products/Sebeke/11/111.png",
           },
           {
             id: 112,
             name: "Product 2",
             describtion: "Description 2",
-            price: 200,
+            link: "https://navijin.com/product/ge5210-p48s4-l3", 
+            price: 0,
             image: "../assets/Products/Sebeke/11/112.png",
           },
           {
@@ -217,13 +219,13 @@ export const Products = [
     ],
   },
   {
-    id: 2,
+    id: "1.2",
     name: "Server equipments",
     img: "../assets/Products/Server/2.png",
     subcategories: [],
   },
   {
-    id: 3,
+    id: "1.3",
     name: "Wireless network equipments",
     img: "../assets/Products/Simsiz/3.png",
     subcategories: [
@@ -615,7 +617,7 @@ export const Products = [
     ],
   },
   {
-    id: 4,
+    id: "1.4",
     name: "Video survelilance systems",
     img: "../assets/Products/Video/4.png",
     subcategories: [
@@ -853,7 +855,7 @@ export const Products = [
     ],
   },
   {
-    id: 5,
+    id: "1.5",
     name: "Access control systems",
     img: "../assets/Products/Giris/5.png",
     subcategories: [
@@ -1014,14 +1016,14 @@ export const Products = [
     ],
   },
   {
-    id: 6,
-    name: "İP Telephone systems",
+    id: "1.6",
+    name: "IP Telephone systems",
     img: "../assets/Products/Iptel/6.png",
     subcategories: [],
   },
   {
-    id: 7,
-    name: "Cartrifges",
+    id: "1.7",
+    name: "Cartridges",
     img: "../assets/Products/Cartridges/7.png",
     subcategories: [
       {
@@ -1258,37 +1260,31 @@ export const Products = [
     ],
   },
   {
-    id: 8,
-    name: "Computer",
+    id: "1.8",
+    name: "Computers",
     img: "../assets/Products/Computers/8.png",
     subcategories: [],
   },
   {
-    id: 9,
-    name: "Laptop",
+    id: "1.9",
+    name: "Laptops",
     img: "../assets/Products/Laptops/9.png",
     subcategories: [],
   },
   {
-    id: 10,
+    id: "1.10",
     name: "Printers and scanners",
     img: "../assets/Products/PrintersandScanners/10.png",
     subcategories: [],
   },
   {
-    id: 11,
+    id: "1.11",
     name: "UPSs",
     img: "../assets/Products/UPSs/11.png",
     subcategories: [],
   },
   {
-    id: 12,
-    name: "Flashcart and memory devices",
-    img: "../assets/Products/FlashcartandMemory/12.png",
-    subcategories: [],
-  },
-  {
-    id: 13,
+    id: "1.12",
     name: "Accessories",
     img:"../assets/Products/Accessories/13.png",
     subcategories: [],

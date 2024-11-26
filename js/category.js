@@ -50,13 +50,18 @@ function initializeCategoryPage() {
 function displayProducts(subcategories) {
     const categoryItemsContainer = document.getElementById('category-items');
     categoryItemsContainer.innerHTML = '';
+    console.log(subcategories)
 
     subcategories.forEach(subcategory => {
         subcategory.catalog.forEach((product, index) => {
             // Create product card
-            const card = document.createElement('div');
+            const card = product.image ? document.createElement('a') : document.createElement('div');
             card.className = 'card bg-white p-6 rounded-xl shadow-lg hover:shadow-xl';
             card.dataset.productId = product.id;
+            card.target = "blank";
+            card.href = product.link;
+
+            console.log(product)
 
             const img = document.createElement('img');
             img.src = product.image;
